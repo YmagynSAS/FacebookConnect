@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+id="org.apache.cordova.facebook"
+    version="0.0.1">
+    <name>ConnectPlugin</name>
+    <description>Facebook Connect Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,facebook</keywords>
+
+    <asset src="www/facebook-js-sdk.js" target="facebook-js-sdk.js"/>
+    
+    <js-module src="www/cdv-plugin-fb-connect.js" name="CDV">
+        <clobbers target="window.CDV" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ConnectPlugin" >
+                <param name="android-package" value="org.apache.cordova.facebook.ConnectPlugin"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+			<uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        
+        <source-file src="src/android/AsyncFacebookRunner.java" target-dir="src/org/apache/cordova/facebook" />
+        <source-file src="src/android/ConnectPlugin.java" target-dir="src/org/apache/cordova/facebook" />
+		<source-file src="src/android/DialogError.java" target-dir="src/org/apache/cordova/facebook" />
+		<source-file src="src/android/Facebook.java" target-dir="src/org/apache/cordova/facebook" />
+		<source-file src="src/android/FacebookError.java" target-dir="src/org/apache/cordova/facebook" />
+		<source-file src="src/android/FbDialog.java" target-dir="src/org/apache/cordova/facebook" />
+		<source-file src="src/android/Util.java" target-dir="src/org/apache/cordova/facebook" />
+     </platform>
+            
+</plugin>
