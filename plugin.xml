@@ -67,11 +67,11 @@ id="org.apache.cordova.facebook"
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSMainNibFile">
-            <string>Toto</string>
+            <string>nil</string>
         </config-file>
 
         <config-file target="*-Info.plist" parent="NSMainNibFile~ipad">
-            <string>Tata</string>
+            <string>nil</string>
         </config-file>
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
