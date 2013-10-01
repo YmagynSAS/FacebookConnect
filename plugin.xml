@@ -47,7 +47,6 @@ id="org.apache.cordova.facebook"
             </feature>
         </config-file>
 
-	<!--
         <config-file target="*-Info.plist" parent="FacebookAppID">
             <string>411100578992217</string>
         </config-file>
@@ -66,7 +65,6 @@ id="org.apache.cordova.facebook"
             </dict>
           </array>
         </config-file>
-        -->
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
         <source-file src="src/ios/FacebookConnectPlugin.m" />
