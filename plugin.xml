@@ -66,14 +66,6 @@ id="org.apache.cordova.facebook"
           </array>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="NSMainNibFile">
-            <string>nil</string>
-        </config-file>
-
-        <config-file target="*-Info.plist" parent="NSMainNibFile~ipad">
-            <string>nil</string>
-        </config-file>
-
         <header-file src="src/ios/FacebookConnectPlugin.h" />
         <source-file src="src/ios/FacebookConnectPlugin.m" />
 
