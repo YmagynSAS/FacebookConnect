@@ -42,7 +42,7 @@ id="org.apache.cordova.facebook"
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="org.apache.cordova.facebook.Connect">
+            <feature name="ConnectPlugin">
                 <param name="ios-package" value="FacebookConnectPlugin" />
             </feature>
         </config-file>
