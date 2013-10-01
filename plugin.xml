@@ -10,7 +10,6 @@ id="org.apache.cordova.facebook"
     <keywords>cordova,facebook</keywords>
 
     <asset src="www/facebook-js-sdk.js" target="facebook-js-sdk.js" />
-    <asset src="www/cdv-plugin-fb-connect.js" target="cdv-plugin-fb-connect.js" />
     
     <js-module src="www/cdv-plugin-fb-connect.js" name="CDV">
         <clobbers target="window.CDV" />
