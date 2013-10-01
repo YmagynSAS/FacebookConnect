@@ -68,6 +68,7 @@ id="org.apache.cordova.facebook"
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
         <source-file src="src/ios/FacebookConnectPlugin.m" />
+        <source-file src="src/ios/FacebookSDK" framework="true" />
 
         <!-- facebook header files -->
         <header-file src="src/ios/headers/FBAccessTokenData.h" target-dir="facebook" />
