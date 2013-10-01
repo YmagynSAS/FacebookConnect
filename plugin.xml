@@ -9,7 +9,8 @@ id="org.apache.cordova.facebook"
     <license>Apache 2.0</license>
     <keywords>cordova,facebook</keywords>
 
-    <asset src="www/facebook-js-sdk.js" target="facebook-js-sdk.js"/>
+    <asset src="www/facebook-js-sdk.js" target="facebook-js-sdk.js" />
+    <asset src="www/cdv-plugin-fb-connect.js" target="cdv-plugin-fb-connect.js" />
     
     <js-module src="www/cdv-plugin-fb-connect.js" name="CDV">
         <clobbers target="window.CDV" />
@@ -65,6 +66,14 @@ id="org.apache.cordova.facebook"
           </array>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="NSMainNibFile">
+            <string></string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSMainNibFile~ipad">
+            <string></string>
+        </config-file>
+
         <header-file src="src/ios/FacebookConnectPlugin.h" />
         <source-file src="src/ios/FacebookConnectPlugin.m" />
 
@@ -106,7 +115,7 @@ id="org.apache.cordova.facebook"
         <header-file src="src/ios/headers/NSError+FBError.h" target-dir="facebook" />
 
         <!-- facebook resource bundles -->
-        <resource-file src="src/ios/resources/FacebookSDKResources.bundle" />
+        <!--<resource-file src="src/ios/resources/FacebookSDKResources.bundle" />-->
         <resource-file src="src/ios/resources/FBUserSettingsViewResources.bundle" />
         
         <!-- system frameworks -->
@@ -115,7 +124,6 @@ id="org.apache.cordova.facebook"
         <framework src="Accounts.framework" weak="true" />
         <framework src="AdSupport.framework" weak="true" />
         <framework src="Security.framework" weak="true" />
-        <framework src="FacebookSDK.framework" weak="true" />
     </platform>
             
 </plugin>
