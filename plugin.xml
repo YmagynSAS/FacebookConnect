@@ -46,25 +46,6 @@ id="org.apache.cordova.facebook"
             </feature>
         </config-file>
 
-        <config-file target="*-Info.plist" parent="FacebookAppID">
-            <string>411100578992217</string>
-        </config-file>
-        
-        <config-file target="*-Info.plist" parent="FacebookDisplayName">
-            <string>Prisma Pub</string>
-        </config-file>
-        
-        <config-file target="*-Info.plist" parent="CFBundleURLTypes">
-          <array>
-            <dict>
-              <key>CFBundleURLSchemes</key>
-              <array>
-                <string>fb411100578992217</string>
-              </array>
-            </dict>
-          </array>
-        </config-file>
-
         <header-file src="src/ios/FacebookConnectPlugin.h" />
         <source-file src="src/ios/FacebookConnectPlugin.m" />
         <source-file src="src/ios/FacebookSDK" framework="true" />
