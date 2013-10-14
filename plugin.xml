@@ -47,11 +47,11 @@ id="org.apache.cordova.facebook"
         </config-file>
 
         <config-file target="*-Info.plist" parent="FacebookAppID">
-            <string>411100578992217</string>
+            <string></string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="FacebookDisplayName">
-            <string>Prisma Pub</string>
+            <string></string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
@@ -59,7 +59,7 @@ id="org.apache.cordova.facebook"
             <dict>
               <key>CFBundleURLSchemes</key>
               <array>
-                <string>fb411100578992217</string>
+                <string></string>
               </array>
             </dict>
           </array>
