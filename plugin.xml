@@ -57,10 +57,7 @@ id="org.apache.cordova.facebook"
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
           <array>
             <dict>
-              <key>CFBundleURLSchemes</key>
-              <array>
-                <string></string>
-              </array>
+
             </dict>
           </array>
         </config-file>
