@@ -28,7 +28,7 @@ id="org.apache.cordova.facebook"
 			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
 			<uses-permission android:name="android.permission.INTERNET" />
         </config-file>
-        
+        <source-file src="ressources/com_facebook_close.png" target-dir="res/drawable" />
         <source-file src="src/android/AsyncFacebookRunner.java" target-dir="src/org/apache/cordova/facebook" />
         <source-file src="src/android/ConnectPlugin.java" target-dir="src/org/apache/cordova/facebook" />
 		<source-file src="src/android/DialogError.java" target-dir="src/org/apache/cordova/facebook" />
